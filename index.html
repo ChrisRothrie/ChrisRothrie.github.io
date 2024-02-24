@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Chris Rothrie">
@@ -9,56 +14,86 @@
     <title>About Me</title>
 </head>
 
-<body class="min-h-screen">
+<body class="min-h-screen bg-yinmnblue text-white font-nunito">
 
     <header class="bg-oxfordblue flex flex-row-reverse place-content-start p-2">
         <div class="pl-2 flex justify-center flex-col">
-            <h1 class="text-white text-3xl">Chris Rothrie</h1>
+            <h1 class="text-white text-3xl font-anta">Chris Rothrie</h1>
             <p class="text-white italic">Aspiring full stack developer</p>
         </div>
         <img src="./Images/profilePic.jpg" alt="Chris Rothrie" height="1626" width="1615" class="object-fill rounded-full w-24">
     </header>
 
-<!--     <section>
-        <h2>About Me</h2>
+    <section class="p-2">
+        <h2 class="text-xl font-bold">About Me</h2>
 
-        <p>I completed my Computer Science degree in 2005 but have not had a career so far as a devloper. I started re-learning how to code in late 2023 and thid page tracks some of my projects to date.</p>
+        <p class="pt-2 pb-2">I completed my Computer Science degree in 2005 but so far I have not become a professional software developer. The closest I have got is doing some data analytics, and of course the corporate IDE of Excel. I have always had an itch to code so I started re-learning how in late 2023 and this page tracks some of my projects to date.</p>
 
-        <p>Besides coding I also enjoy Crossfit &#127947 and BBQ &#127830</p>
+        <p class="pt-2 pb-2">Besides coding I also enjoy Crossfit &#127947 and BBQ &#127830</p>
 
         <p>Programming languages I know so far...</p>
-        <img src="" alt="HTML5">
-        <img src="" alt="CSS3">
-        <img src="" alt="CSS Tailwind">
-        <img src="" alt="JavaScript">
-        <img src="" alt="Java">
+        <div class="flex flex-row flex-wrap">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src="./Images/html5icon.png" alt="HTML5" height="96" width="96" class="pr-1 max-w-20"></a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="./Images/css3icon.png" alt="CSS3" height="96" width="96" class="pr-1 max-w-20"></a>
+            <a href="https://tailwindcss.com/"><img src="./Images/csstailwindicon.png" alt="CSS Tailwind" height="96" width="96" class="pr-1 max-w-20"></a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="./Images/javascripticon.png" alt="JavaScript" height="96" width="96" class="pr-1 max-w-20"></a>
+            <a href="https://docs.oracle.com/javase/8/docs/api/"><img src="Images/javaicon.png" alt="Java" height="96" width="96" class="pr-1 max-w-20"></a>
+        </div>    
 
-        <p>I am currently learning about</p>
-        <img src="" alt="NPM">
-        <img src="" alt="node.js">
-        <img src="" alt="MongoDB">
+        <p>I am currently learning about...</p>
+        <div class="flex flex-row flex-wrap"> 
+            <img src="./Images/npmicon.png" alt="NPM" height="96" width="96" class="pr-1 max-w-20">
+            <img src="./Images/nodeicon.png" alt="node.js" height="96" width="96" class="pr-1 max-w-20">
+            <img src="./Images/mongoicon.png" alt="MongoDB" height="96" width="96" class="pr-1 max-w-20">
+        </div>
 
-        <p>On my list to learn is</p>
-        <img src="" alt="TypeScript">
-        <img src="" alt="Docker">
-        <img src="" alt="AWS">
-
-        <p>Contact me</p>
+        <p>On my list to learn is...</p>
+        <div class="flex flex-row flex-wrap"> 
+            <img src="./Images/typescripticon.png" alt="TypeScript" height="96" width="96" class="pr-1 max-w-20">
+            <img src="./Images/dockericon.png" alt="Docker" height="96" width="96" class="pr-1 max-w-20">
+            <img src="./Images/awsicon.png" alt="AWS" height="96" width="96" class="pr-1 max-w-20">
+        </div>
     </section>
 
-    <section>
-        <h2>Projects</h2>
+    <section class="p-2">
+        <h2 class="text-xl font-bold">Projects</h2>
 
-        <article>
-            <h3>Rock Paper Scissors Game</h3>
+        <article class="border-2 mt-2.5">
+            <a href="https://github.com/ChrisRothrie/rpsGame"><h3 class="italic p-2 hover:text-slate-300">Rock Paper Scissors Game</h3></a>
+            <p class="p-2">This is one of my first JavaScript projects. Key functionality includes:
+                <ul class="list-disc pl-6">
+                    <li>A form that takes in a player name</li>
+                    <li>Game logic so you can play the computer</li>
+                    <li>An ordered scoreboard that updates after each game with player and computer score</li>
+                </ul>
+            </p>
+
         </article>
 
-        <article>
-            <h3>API Practice</h3>
+        <article class="border-2 mt-2.5">
+            <a href="https://github.com/ChrisRothrie/apiPractice"><h3 class="italic p-2 hover:text-slate-300">API Practice</h3></a>
+            <p class="p-2">This is a simple API site:
+                <ul class="list-disc pl-6">
+                    <li>Connects to joke API that gets a new joke each time the form is submitted</li>
+                    <li>The form can be used to tailor the API response</li>
+                    <li>The page is styled using TailWind like this page!</li>
+                </ul>
+            </p>
         </article>
     </section>
 
-    <footer>Chris Rothrie</footer> -->
+    <br>
+    <br>
+    <br>
+
+    <footer class="bg-oxfordblue p-2 fixed bottom-0 inset-x-0 flex flex-col flex-wrap">
+        <p class="text-center">Chris Rothrie</p>
+        <nav class="flex flex-row flex-wrap justify-between">
+            <a href="https://github.com/ChrisRothrie"><img src="./Images/githubicon.png" alt="GitHub"></a>
+            <a href="https://www.instagram.com/chrisrothrie/?hl=en"><img src="./Images/instaicon.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/chris-rothrie-a3a5b632/"><img src="./Images/linkedinicon.png" alt="LinkedIn"></a>
+        </nav>
+    </footer>
 
 </body>
 </html>

@@ -3,10 +3,10 @@ module.exports = {
   content: ['./build/index.html'],
   theme: {
     extend: {
-      //fontFamily: {
-      //  nunito: ["Nunito", "sans-serif"],
-      //  anta: ["\"Anta\"", "sans-serif"]
-      //},
+      fontFamily: {
+        nunito: ["Nunito", "sans-serif"],
+        anta: ["Anta", "sans-serif"]
+      },
       colors: {
         'white': '#ffffff',
         'verdigris': '#5bc0be',
